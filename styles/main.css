@@ -1,0 +1,226 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* =================================
+    DEFAULT STYLES
+====================================*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #F1FAEE;
+    font-family: 'Bungee', cursive;
+}
+
+/* should add a button style here */
+
+
+/*============================ 
+    MAIN CONTAINER STYLE
+==============================*/
+.main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =====================================
+    SCREENS CONTAINER STYLE
+======================================== */
+
+.screens-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*============================
+    MAIN GAME SCREEN STYLES
+==============================*/
+.main-screen-container {
+    display: flex;
+    flex: 1;
+}
+
+
+/*SIDEBAR STYLE*/
+
+.sidebar {
+    background-color: #001828;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.sidebar h1 {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 64px;
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+/* RSP BUTTON STYLE */
+.rps-icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rps-btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: #D64040;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: antiquewhite;
+
+    box-shadow: 5px 5px 5px #000;
+    cursor: pointer;
+}
+
+
+/* MAIN SCREEN BODY DESIGN */
+.main-body {
+    width: 100%;
+    background-color: #182E30;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-body-title h2 {
+    font-size: 68px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.main-body-title p {
+    font-size: 42px;
+}
+
+/* SCORE CARD SCREEN STYLE */
+.score-card-container {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 180px;
+    font-size: 42px;
+
+    /* display: none; */
+}
+
+.score-card-container .versus {
+    font-size: 82px;
+    margin-bottom: 72px;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.score-card-icons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.score-card-icons .rps-btn {
+    cursor: auto;
+}
+
+.feedback {
+    margin-top: 30px;
+    font-size: 46px;
+    font-family: 'Lobster', cursive;
+}
+
+
+/*======================================
+    START GAME SCREEN STYLE
+========================================*/
+
+.start-screen-container {
+    background-color: #182E30;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;
+}
+
+.start-screen-container h1 {
+    font-size: 96px;
+    margin-bottom: 20px;
+}
+
+.start-screen-container p {
+    font-size: 68px;
+    margin-bottom: 60px;
+    font-family: 'Lobster', cursive;
+}
+
+.start-btn {
+    display: block;
+    font-size: 54px;
+    background-color: #001828;
+    padding: 20px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* =========================================
+    END SCREEN STYLE
+============================================ */
+    .end-screen-container {
+        background-color: #182E30;
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .end-screen-container h1 {
+        font-size: 96px;
+        margin-bottom: 36px;
+    }
+
+
+/*========================================
+    Footer style 
+=========================================*/
+
+.footer {
+    background-color: #000;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+.d-none {
+    display: none;
+    opacity: 0;
+}

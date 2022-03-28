@@ -4,10 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Rock paper scissor</title>
   </head>
+
   <body>
-    <h1>Rock Paper Scissor Game</h1>
+    <div class="main-container">
+      <div class="screens-container">
+
+        <div class="start-screen-container">
+          <h1>ROCK PAPER SCISSOR</h1>
+          <p>First to score 5 wins!</p>
+          <div class="start-btn btn">CLICK HERE TO START</div>
+        </div>
+
+        <div class="main-screen-container d-none">
+          <div class="sidebar">
+            <h1>Choose your weapon</h1>
+            <div class="rps-icon-container">
+              <div data-name="rock" class="rps-btn rock">
+                <i data-name="rock" class="fa-solid fa-hand-back-fist"></i>
+              </div>
+              <div data-name="paper" class="rps-btn paper">
+                <i data-name="paper" class="fa-solid fa-hand"></i>
+              </div>
+              <div data-name="scissor" class="rps-btn scissor">
+                <i data-name="scissor" class="fa-solid fa-hand-scissors"></i>
+              </div>
+            </div>
+          </div>
+          <div class="main-body">
+            <div class="main-body-title">
+              <h2>ROCK PAPER SCISSOR</h2>
+              <p>First to score 5 wins</p>
+              <h1 class="feedback">Enter your choice</h1>
+            </div>
+            <div class="score-card-container">
+       
+              <div class="score-card">
+                <div class="score-card-icons">
+                  <div class="card-icon-score-player rps-btn">
+                    <span class="player-score">0</span>
+                  </div>
+                  <div class="card-icon-player rps-btn">
+                    <span>?</span>
+                  </div>
+                </div>
+                <div>PLAYER</div>
+              </div>
+
+              <div class="versus">VS</div>
+
+              <div class="score-card">
+                <div class="score-card-icons">
+                  <div class="card-icon-comp rps-btn">
+                    <span>?</span>
+                  </div>
+                  <div class="card-icon-score-comp rps-btn">
+                    <span class="computer-score">0</span>
+                  </div>
+                </div>
+                <div>COMPUTER</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="end-screen-container d-none">
+          <h1 class="winer-msg">You win!</h1>
+          <div class="start-btn">CLICK TO PLAY AGAIN</div>
+        </div>
+      </div>
+
+      <div class="footer">Created by shakibul islam</div>
+    </div>
 
     <script src="app/main.js"></script>
   </body>
